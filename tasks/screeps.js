@@ -4,6 +4,8 @@
  *
  * Copyright (c) 2015 Artem Chivchalov
  * Licensed under the MIT license.
+ * 
+ * This is an updated version of grunt-screeps incorporating token support by cavejay and season support by Sca1ey.
  */
 
 "use strict";
@@ -106,15 +108,17 @@ module.exports = function (grunt) {
                 if (parsed.ok) {
                   var msg =
                     "Committed to " +
-                    serverText +
-                    ' account "' +
-                    options.email +
-                    '"';
+                      serverText +
+                      ' account "' +
+                      options.email || "Screeps" + '"';
                   if (options.branch) {
                     msg += ' branch "' + options.branch + '"';
                   }
                   if (options.ptr) {
                     msg += " [PTR]";
+                  }
+                  if (options.season) {
+                    msg += " [Season]";
                   }
                   msg += ".";
                   grunt.log.writeln(msg);
