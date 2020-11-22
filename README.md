@@ -12,9 +12,14 @@ npm install @sca1ey/grunt-screeps
 
 This is an updated version of grunt-screeps incorporating token support by cavejay and season support by Sca1ey.
 This also implments the screeps.json file as detailed in the advanced usage examples (http://docs.screeps.com/contributed/advanced_grunt.html).
-This has been further extended to enable multiple server profiles as shown in the example screeps.json file (below).
+This has been further extended to enable multiple server profiles as shown in the example screeps.json file (below) and is the same format as used by screeps-typescript-starter.
 
 ### Usage Example
+
+```
+NB: grunt.loadNpmTasks("@sca1ey/grunt-screeps");
+
+```
 
 **Gruntfile.js:**
 
@@ -44,7 +49,7 @@ module.exports = function (grunt) {
   }
 
   grunt.loadNpmTasks("grunt-tsc");
-  grunt.loadNpmTasks("grunt-screeps");
+  grunt.loadNpmTasks("@sca1ey/grunt-screeps");
 
   grunt.initConfig({
     tsc: {
@@ -123,9 +128,10 @@ Now you can run this command to commit your code from `dist` folder to your Scre
 ```
 
 grunt screeps
-grunt screeps -profile mmo -branch working
-grunt screeps -season -token a1b2c3d4e5f6g7h8i9j0
-grunt screeps -server 127.0.0.1 -port 21025 -http -email user@example.com -password PASSWORD
+
+grunt screeps --profile mmo --branch working
+grunt screeps --season --token a1b2c3d4e5f6g7h8i9j0
+grunt screeps --server 127.0.0.1 --port 21025 --http --email user@example.com --password PASSWORD
 
 ```
 
