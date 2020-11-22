@@ -23,7 +23,8 @@ module.exports = function(grunt) {
         screeps: {
             options: {
                 email: 'YOUR_EMAIL',
-                password: 'YOUR_PASSWORD',
+                token: 'YOUR_AUTH_TOKEN',
+                // password: 'YOUR_PASSWORD', // Grunt will use the password when there's no token supplied
                 branch: 'default',
                 ptr: false
             },

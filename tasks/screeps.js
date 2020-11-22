@@ -52,17 +52,24 @@ module.exports = function (grunt) {
                 }
             });
 
-            var proto = server.http ? http : https,
-                req = proto.request({
+            var reqParams = {
                 hostname: server.host || 'screeps.com',
                 port: server.port || (server.http ? 80 : 443),
                 path: options.ptr ? '/ptr/api/user/code' : '/api/user/code',
                 method: 'POST',
-                auth: options.email + ':' + options.password,
                 headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
+                    'Content-Type': 'application/json; charset=utf-8',
                 }
-            }, function(res) {
+            }
+
+            if (options.token) {
+                reqParams.headers['X-Token'] = options.token;
+            } else {
+                reqParams.auth = options.email + ':' + options.password;
+            }
+
+            var proto = server.http ? http : https,
+                req = proto.request(reqParams, function(res) {
                 res.setEncoding('utf8');
 
                 var data = '';
