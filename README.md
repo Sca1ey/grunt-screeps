@@ -129,9 +129,9 @@ Now you can run this command to commit your code from `dist` folder to your Scre
 
 grunt screeps
 
-grunt screeps --profile mmo --branch working
-grunt screeps --season --token a1b2c3d4e5f6g7h8i9j0
-grunt screeps --server 127.0.0.1 --port 21025 --http --email user@example.com --password PASSWORD
+grunt screeps --profile=mmo --branch=working
+grunt screeps --season --token=a1b2c3d4e5f6g7h8i9j0
+grunt screeps --host=127.0.0.1 --port=21025 --http --email=user@example.com --password=PASSWORD
 
 ```
 
