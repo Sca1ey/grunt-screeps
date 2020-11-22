@@ -116,9 +116,10 @@ module.exports = function (grunt) {
     "branch": "default"
   }
 }
-
+```
 
 Now you can run this command to commit your code from `dist` folder to your Screeps account:
+
 ```
 
 grunt screeps
@@ -127,5 +128,9 @@ grunt screeps -season -token a1b2c3d4e5f6g7h8i9j0
 grunt screeps -server 127.0.0.1 -port 21025 -http -email user@example.com -password PASSWORD
 
 ```
+
 See more advanced grunt usage examples in [this docs article](http://docs.screeps.com/contributed/advanced_grunt.html).
+
+```
+
 ```
