@@ -1,7 +1,7 @@
 {
   "name": "@sca1ey/grunt-screeps",
   "description": "A Grunt plugin for committing code to your Screeps account",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/sca1ey/grunt-screeps",
   "author": "This Fork: Sca1ey, Original: Artem Chivchalov <chivchalov@gmail.com> (https://screeps.com)",
   "repository": {
