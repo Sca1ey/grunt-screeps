@@ -1,20 +1,20 @@
 {
   "name": "@sca1ey/grunt-screeps",
   "description": "A Grunt plugin for committing code to your Screeps account",
-  "version": "1.0.3",
-  "homepage": "https://github.com/screeps/grunt-screeps",
-  "author": "Artem Chivchalov <chivchalov@gmail.com> (https://screeps.com)",
+  "version": "1.0.4",
+  "homepage": "https://github.com/sca1ey/grunt-screeps",
+  "author": "This Fork: Sca1ey, Original: Artem Chivchalov <chivchalov@gmail.com> (https://screeps.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/screeps/grunt-screeps.git"
+    "url": "https://github.com/sca1ey/grunt-screeps.git"
   },
   "bugs": {
-    "url": "https://github.com/screeps/grunt-screeps/issues"
+    "url": "https://github.com/sca1ey/grunt-screeps/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/screeps/grunt-screeps/blob/master/LICENSE-MIT"
+      "url": "https://github.com/sca1ey/grunt-screeps/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
